@@ -1,0 +1,67 @@
+
+
+
+
+.jumbotron {
+    text-align: center;
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+.jumbotron h1{
+  color: #22074e;
+  font-size: 67px;
+}
+.jumbo_text{
+    color: #b30000;
+    font-size: 33px;
+    font-weight: 500;
+}
+.news_text{
+  font-size: 69px;
+  padding-bottom: .5rem;
+}
+a.news_link {
+  float: right;
+}
+.card-body{
+    height: 208px;
+    width: auto;
+}
+.card img {
+    height: 177px;
+}
+.card-text{
+    font-size: 13px;
+}
+.mainContain img{
+    height: 204px;
+}
+.aboutwrapper{
+  padding: 25px 0 25px 0;
+}
+.characterwrapper{
+  padding-bottom: 25px;
+}
+.seebtn{
+  padding-left: 45px;
+}
+
+footer.foot {
+    height: 120px;
+    width: 1349px;
+    background: black;
+    /* margin: 10px; */
+  }
+  p.ftxt {
+    color: bisque;
+    text-align: center;
+    padding-top: 11px;
+  }
+  p.ftxt:hover{
+    cursor: pointer;
+  }
+  img.flogo {
+    height: 68px;
+    margin-left: 653px;
+  }
