@@ -6,7 +6,7 @@
     text-align: center;
     background-image: url(banner.jpg);
     background-size: cover;
-    background-repeat: repeat;
+    /* background-repeat: repeat; */
 }
 .jumbotron h1{
   color: #22074e;
@@ -17,41 +17,54 @@
     font-size: 33px;
     font-weight: 500;
 }
+.signInSec{
+  margin-left: 8rem;
+}
 .news_text{
   font-size: 69px;
   padding-bottom: .5rem;
 }
-a.news_link {
-  float: right;
+.aboutimgwrapper {
+  height: 220px;
+  width: 370px;
 }
-.card-body{
-    height: 208px;
-    width: auto;
-}
-.card img {
-    height: 177px;
-}
-.card-text{
-    font-size: 13px;
-}
-.mainContain img{
-    height: 204px;
-}
-.aboutwrapper{
-  padding: 25px 0 25px 0;
-}
-.characterwrapper{
-  padding-bottom: 25px;
-}
-.seebtn{
-  padding-left: 45px;
+.aboutimg{
+  height: 100%;
+  width: 100%;
 }
 
-footer.foot {
+.charwrapper{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 55px;
+}
+
+div#carouselExampleCaptions {
+  width: 34%;
+}
+.chartxt {
+  width: 65%;
+  padding-top: 3%;
+}
+.forbtn {
+  text-align: center;
+}
+
+@media only screen and (max-width:991px) {
+
+  div#carouselExampleCaptions {
+    width: 100%;
+  }
+  .chartxt {
+    width: 97%;
+  }
+}
+
+.foot {
     height: 120px;
-    width: 1349px;
+    /* width: 100%; */
     background: black;
-    /* margin: 10px; */
+    margin: 10px;
   }
   p.ftxt {
     color: bisque;
@@ -61,7 +74,7 @@ footer.foot {
   p.ftxt:hover{
     cursor: pointer;
   }
-  img.flogo {
+/* img.flogo {
     height: 68px;
     margin-left: 653px;
-  }
+  } */
