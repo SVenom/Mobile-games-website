@@ -4,7 +4,7 @@
 
 .jumbotron {
     text-align: center;
-    background-image: url(banner.jpg);
+    background-image: url("Others/banner.jpg");
     background-size: cover;
     /* background-repeat: repeat; */
 }
@@ -42,12 +42,21 @@
 div#carouselExampleCaptions {
   width: 34%;
 }
-.chartxt {
+.carouseltext {
   width: 65%;
   padding-top: 3%;
 }
 .forbtn {
   text-align: center;
+}
+.mapwrapper{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 55px;
+}
+
+div#carouselExampleCaptions-one {
+  width: 33%;
 }
 
 @media only screen and (max-width:991px) {
@@ -55,7 +64,10 @@ div#carouselExampleCaptions {
   div#carouselExampleCaptions {
     width: 100%;
   }
-  .chartxt {
+  div#carouselExampleCaptions-one{
+    width: 99%;
+  }
+  .carouseltext {
     width: 97%;
   }
 }
