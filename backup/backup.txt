@@ -1,0 +1,47 @@
+//GUN SECTION//  
+
+
+
+
+<!-- section 2 -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class=" col">
+            <div class="gunwrapper">
+              <h2 class="text-center">Assault Rifle</h2>
+              <div class="gun">
+                <div class="card">
+                  <div class="card-body">
+                    <p onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-text">Lorem ipsum, dolor sit
+                      amet consectetur adipisicing elit. Aspernatur quas dicta hic amet qui commodi possimus, alias
+                      laudantium veritatis corporis cupiditate voluptatibus illo suscipit quaerat. Explicabo rem dolorem
+                      ea eligendi! </p>
+                    <img class="bg-img" src="Guns/sks.jpg" alt="...">
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <p onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-text">Lorem ipsum, dolor sit
+                      amet consectetur adipisicing elit. Aspernatur quas dicta hic amet qui commodi possimus, alias
+                      laudantium veritatis corporis cupiditate voluptatibus illo suscipit quaerat. Explicabo rem dolorem
+                      ea eligendi! </p>
+                    <img class="bg-img" src="Guns/sks.jpg" alt="...">
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <p onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-text">Lorem ipsum, dolor sit
+                      amet consectetur adipisicing elit. Aspernatur quas dicta hic amet qui commodi possimus, alias
+                      laudantium veritatis corporis cupiditate voluptatibus illo suscipit quaerat. Explicabo rem dolorem
+                      ea eligendi! </p>
+                    <img class="bg-img" src="Guns/sks.jpg" alt="...">
+                  </div>
+                </div>
+	      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>

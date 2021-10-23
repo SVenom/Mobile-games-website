@@ -1,7 +1,13 @@
 
 
 /* This the css file */
+.navbar{
+  height: 56px;
+}
 
+img.logopic {
+  height: 45px;
+}
 .jumbotron {
     text-align: center;
     background-image: url("Others/banner.jpg");
@@ -46,6 +52,9 @@ div#carouselExampleCaptions {
   width: 65%;
   padding-top: 3%;
 }
+/* h5#exampleModal1Label {
+  margin-left: 475px; */
+/* } */
 .forbtn {
   text-align: center;
 }
@@ -53,6 +62,18 @@ div#carouselExampleCaptions {
   display: flex;
   flex-wrap: wrap;
   margin-top: 55px;
+}
+/* js style */
+img.bg-img {
+  height: 100%;
+  width: 100%;
+}
+p.card-text-one {
+  color: transparent;
+  position: absolute;
+  height: 100%;
+  /* padding: 65px 1px; */
+  /* font-size: 13px; */
 }
 
 div#carouselExampleCaptions-one {
@@ -70,13 +91,25 @@ div#carouselExampleCaptions-one {
   .carouseltext {
     width: 97%;
   }
+  p.card-text-one{
+    padding: 0;
+    font-size: smaller;
+  }
 }
+@media only screen and (max-width:445px) {
+  p.card-text-one{
+    font-size: 7px
+  }
+}
+
+  
+
 
 .foot {
     height: 120px;
     /* width: 100%; */
     background: black;
-    margin: 10px;
+    margin-top: 10px;
   }
   p.ftxt {
     color: bisque;

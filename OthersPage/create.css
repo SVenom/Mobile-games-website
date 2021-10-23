@@ -1,0 +1,52 @@
+
+body{
+    background-image: url("../Others/create.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fromwrapper {
+padding: 28px;    
+height: 469px;
+/* width: 26%; */
+background: #ffffffad;
+transform: translate(75%, 8%);
+border: none;
+border-radius: 16px;
+text-align: center;
+}
+h2{
+margin:25px;
+}
+.socialbtn{
+padding:10px;
+}
+input#box {
+height: 51px;
+border-radius: 10px;
+}
+/* div#next2 {
+transform: translate(0%, 59%);
+} */
+/* .nextbtn {
+transform: translate(0%, 274%);
+} */
+/* @media only screen and (max-width:1394px) {
+
+body{
+    background-size:auto;
+}
+} */
+@media only screen and (max-width:991px) {
+
+body{
+    background-size:auto;
+}
+.fromwrapper{
+    height: 490px;
+    transform:translate(0%,12%);
+    padding: 10px;
+
+}
+    
+}
+
