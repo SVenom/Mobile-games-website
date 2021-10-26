@@ -1,0 +1,42 @@
+
+/* .navbar{
+    height: 56px;
+  } */
+  
+  img.logopic {
+    height: 45px;
+  }
+body {
+  margin-top: 5rem;
+}
+.signInSec {
+    margin-left: 8rem;
+  }
+  .forbtn {
+    text-align: center;
+  }
+select#swapImg {
+  background: bisque;
+  border: none;
+  border-radius:5px;
+  height: auto;
+  padding:3px;
+}
+.foot {
+    height: 120px;
+    /* width: 100%; */
+    background: black;
+    margin-top: 10px;
+  }
+  p.ftxt {
+    color: bisque;
+    text-align: center;
+    padding-top: 11px;
+  }
+  p.ftxt:hover{
+    cursor: pointer;
+  }
+img.flogo {
+    height: 68px;
+    margin-left: 653px;
+  }

@@ -1,5 +1,4 @@
-    // window.scrollTo(0,300)
-    // window.scrollTo(0,20)
+
     const queryString = window.location.search;
 
     const urlParams = new URLSearchParams(queryString);

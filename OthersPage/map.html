@@ -1,159 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maps</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maps</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <style>
-        .signInSec{
-            margin-left: 8rem;
-            }
-        .forbtn {
-            text-align: center;
-            }
-        .container{
-            margin-top: 60px;
-        }  
-        img.mr-3 {
-            height: 220px;
-            width: 332px;
-            padding: 10px 0px;
-        }
-        .media {
-            flex-wrap: wrap;
-        }
-        .media-body {
-            margin: 45px 0px;
-        }
-        .foot {
-            height: 120px;
-            /* width: 100%; */
-            background: black;
-            margin-top: 15px;
-        }
-        p.ftxt {
-            color: bisque;
-            text-align: center;
-            padding-top: 11px;
-        }
-        p.ftxt:hover{
-            cursor: pointer;
-        }
-        @media only screen and (max-width:767px) {
-            .media{
-                display: inline;
-            }
-            h5,p{
-                text-align:unset;
-        
-            }
-            
-        }
-
-    </style>
+  <link rel="stylesheet" href="map.css">
 
 </head>
+
 <body>
-    <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-          <a class="navbar-brand" href="../index.html">Home</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  GAME INFO
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="map.html">Maps</a>
-                  <a class="dropdown-item" href="weapon.html">Weapons</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-success fixed-top">
+      <a class="navbar-brand" href="../index.html"><img src="../Others/logo.jpg" alt="" class="logopic"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              GAME INFO
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="map.html">Maps</a>
+              <a class="dropdown-item" href="weapon.html">Weapons</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Play Now
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="container">
+      <div class="row">
+        <div class="col">
+          <select id="swapImg" name="model" class="modelSelect" onchange="swapImage()">
+            <option value="../Maps/erangel.jpg" selected="selected">Erangel</option>
+            <option value="../Maps/minamar.jpg">Minamar</option>
+            <option value="../Maps/sanhok.jpg">Sanhok</option>
+            <option value="../Maps/vikendi.jpg">Vikendi</option>
+            <option value="../Maps/livik.jpg">Livik</option>
+            <option value="../Maps/karakin.jpg">karakin</option>
+
+
+          </select>
+
+          <div id="Mapbox">
+            <h2 id="map" class="map">Erangel</h2>
+            <img id="imageToSwap" src="../Maps/erangel.jpg" width="544" height="281"
+              style="margin-left:275px; margin-top:-82px" />
+
+            <div id="mapbox-bottom">
+              <h6 id="heading3" class="heading3">PUBG’s Erangel is the game’s first playable map, which is laid out on
+                an 8km X 8km grid, making it four times larger than the recently released Sanhok map. With such a large
+                playing area, one could strategize their drop to maximise their survival during the initial stages of
+                the game. Additionally, one might find themselves using vehicles on an occasional basis to traverse
+                across this beautiful map.
+                Erangel features a blend of cities, small towns, a power plant and a military place dotted over vast
+                green lands, allowing the player to explore it with greater interest. The map offers dynamic weather,
+                and with the large distances, one can expect all kinds of gunfights, including intense short bursts or
+                those long-range sniper attacks.
+                There are no exclusive weapons available on Erangel. SCAR-L assault rifle comes close as it only
+                features on Erangel and Miramar</h6>
+              <p id="textGrey" class="textGrey"><strong>Erangel Map Loot Places</strong> <br>
+                One could find maximum loot at the following three loot areas in the Erangel map. However, one should be
+                extremely careful as these areas are usually swarming with other players during the initial stages of
+                the game. <br>
+                Sosnovka Military Base – Located in the southern island, the Sosnovka Military Base is one of the best
+                places in the game where you can find consistent loot that consists high quantities of weapons, armour
+                and attachments. <br>
+                <br>
+                <strong>School</strong> – The school is located at the centre of the Erangel map and is one of the more
+                popular places amongst the players due to the proximity of its location. One can find good quantities of
+                loot that includes assault rifles, DMRs and mostly level 2 gear.
+                <br>
+                <strong> Mylta Power</strong> – Located in the east, the Mylta Power is a power plant that offers high
+                quantities of supreme loot including sniper rifle attachments and level 3 military gear.
+
+                Other areas that contain reasonable amounts of loot include the <strong>Pochinki,Gerogepol,Prison and
+                  Novorepnoye</strong>.
+              </p>
+              <p id="textGrey2" class="textGrey2"><strong>Erangel Map Guide – Start Locations</strong>
+                <br>
+                Erangel is a very large map and the ideal location to parachute yourself would a zone that is far away
+                from the loot areas but still has a high spawn rate of vehicles, allowing you to quickly travel towards
+                the concentrated areas while your opponents eliminate each other.
+              </p>
+            </div>
           </div>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Play Now
-          </button>
-        </nav>
-      </header>
-    <main>
-        <section class="container">
-            <h1>MAPS</h1>
-            <div class="media">
-                <img src="../Maps/erangel.jpg" class="mr-3" alt="...">
-                <div class="media-body">
-                  <h5 class="mt-0 text-center">Media heading</h5>
-                  <p class="text-center">Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
-                </div>
-              </div>
-            <div class="media">
-                <div class="media-body">
-                  <h5 class="mt-0 text-center">Media heading</h5>
-                  <p class="text-center">Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
-                </div>
-                <img src="../Maps/minamar.jpg" class="mr-3" alt="...">
-              </div>
-              <div class="media">
-                <img src="../Maps/sanhok.jpg" class="mr-3" alt="...">
-                <div class="media-body">
-                  <h5 class="mt-0 text-center">Media heading</h5>
-                  <p class="text-center">Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
-                </div>
-              </div>
-              <div class="media">
-                <div class="media-body">
-                  <h5 class="mt-0 text-center">Media heading</h5>
-                  <p class="text-center">Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
-                </div>
-                <img src="../Maps/vikendi.jpg" class="mr-3" alt="...">
-              </div>
-              <div class="media">
-                <img src="../Maps/livik.jpg" class="mr-3" alt="...">
-                <div class="media-body">
-                  <h5 class="mt-0 text-center">Media heading</h5>
-                  <p class="text-center">Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
-                </div>
-              </div>
-              <div class="media">
-                <div class="media-body">
-                  <h5 class="mt-0 text-center">Media heading</h5>
-                  <p class="text-center">Will you do the same for me? It's time to face the music I'm no longer your muse. Heard it's beautiful, be the judge and my girls gonna take a vote. I can feel a phoenix inside of me. Heaven is jealous of our love, angels are crying from up above. Yeah, you take me to utopia.</p>
-                </div>
-                <img src="../Maps/karakin.jpg" class="mr-3" alt="...">
-              </div>
-        </section>
-    </main>
-    <footer class="foot">
-        <p class="ftxt" onclick="myFunction()">DOWNLOAD GAME CLIENT</p>
-        <div class="flogopic">
-          <!-- <img src="logo.jpg" alt="logopicture" class="flogo"> -->
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="maps.js"></script>
+
+  <!-- footer -->
+  <!-- <footer class="foot">
+    <p class="ftxt" onclick="myFunction()">DOWNLOAD GAME CLIENT</p>
+    <div class="flogopic">
+      <img src="../Others/logo.jpg" alt="logopicture" class="flogo">
+    </div>
+  </footer> -->
 
 
-
-      <!-- Modal -->
+  <!-- Modal for PlayNow-->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -167,28 +146,19 @@
           <div class="makeOneSec">
             <p class="makeOneTxt text-center">I Don't Have An Account</p>
             <div class="forbtn mt-2">
-              <a type="button" href="create.html" class="btn btn-primary text-center">Make One</a>
+              <a type="button" href="../OthersPage/create.html" class="btn btn-primary text-center">Make One</a>
             </div>
           </div>
           <div class="signInSec">
             <p class="signInTxt text-center">I Have An Account</p>
             <div class="forbtn mt-2">
-              <a type="button" href="sign.html" class="btn btn-primary">Sign In</a>
+              <a type="button" href="../OthersPage/sign.html" class="btn btn-primary">Sign In</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
-
-
-
 </body>
+
 </html>

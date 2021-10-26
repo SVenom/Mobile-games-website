@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <select id="swapImg" name="model" class="modelSelect" onchange="swapImage()">
+            <option value="../Maps/minamar.jpg">Minamar</option>
+            <option value="../Maps/erangel.jpg" selected="selected">Erangel</option>
+            <option value="../Maps/sanhok.jpg">Sanhok</option>
+        </select>
+        <br>
+        <br>
+
+        <div id="carbox">
+            <h2 id="model" class="model">A6</h2>
+            <img id="imageToSwap" src="../Maps/erangel.jpg" width="544" height="203"
+                style="margin-left:275px; margin-top:-82px" />
+
+            <div id="carbox-bottom">
+                <h3 id="heading3" class="heading3">Loren ipsum dolor sit ame</h3>
+                <p id="textGrey" class="textGrey">Coisteahi fwior he qvbsi dolo wetiuyy thuoi loren ipsum dolar </p>
+                <p id="textGrey2" class="textGrey2">Coisteahi fwior he qvbsi dolo</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        function swapImage() {
+            debugger
+            var image = document.getElementById("imageToSwap");
+            var dropd = document.getElementById("swapImg");
+            image.src = dropd.options[dropd.selectedIndex].value;
+
+
+            var model = document.getElementById("model");
+            var heading = document.getElementById("heading3");
+            var textGrey = document.getElementById("textGrey");
+            var textGrey2 = document.getElementById("textGrey2");
+
+            if (dropd.value == "../Maps/minamar.jpg") {
+                model.innerHTML = "A4";
+                heading.innerHTML = "This text matches A4 model";
+                textGrey.innerHTML = "kjhkjh we ewf kjikjkj we";
+                textGrey2.innerHTML = "hf efjkj efe  edeeeeejm dff";
+                return false;
+            }
+
+            else if (dropd.value == "../Maps/erangel.jpg") {
+                model.innerHTML = "A6";
+                heading.innerHTML = "This text matches A6 model";
+                textGrey.innerHTML = "xxx xxxxx xxxxx xxxx";
+                textGrey2.innerHTML = "yy yyyy yyyy yy";
+                return false;
+            }
+
+            else if (dropd.value =="../Maps/sanhok.jpg") {
+                model.innerHTML = "A8";
+                heading.innerHTML = "This text matches the A8 model";
+                textGrey.innerHTML = "zzzz zzzzz";
+                textGrey2.innerHTML = "pppp ppp pp p p";
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

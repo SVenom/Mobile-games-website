@@ -1,10 +1,12 @@
 
 
 /* This the css file */
-.navbar{
+/* .navbar{
   height: 56px;
+} */
+body{
+  margin-top: 4rem;
 }
-
 img.logopic {
   height: 45px;
 }
