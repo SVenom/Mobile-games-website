@@ -1,11 +1,35 @@
 
 
 /* This the css file */
-/* .navbar{
-  height: 56px;
-} */
-body{
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Rampart+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=IM+Fell+English+SC&family=Rampart+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Rock+Salt&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=IM+Fell+English+SC&family=Rampart+One&family=Slabo+27px&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+  background: url("Others/background (1).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 4rem;
+}
+p{
+  font-family: "Slabo 27px", sans-serif;
+  font-weight: 500;
+  color: #ffcb00;
 }
 img.logopic {
   height: 45px;
@@ -16,14 +40,37 @@ img.logopic {
     background-size: cover;
     /* background-repeat: repeat; */
 }
-.jumbotron h1{
-  color: #22074e;
-  font-size: 67px;
+.jumbotron h1{  
+  color: #77c015;
+  font-size: 86px;
+  font-family: "Acme",sans-serif;
 }
 .jumbo_text{
-    color: #b30000;
-    font-size: 33px;
-    font-weight: 500;
+  color: deepskyblue;
+  font-size: 42px;
+  font-weight: 500;
+  font-family: "Fruktur",sans-serif;
+}
+.btn:hover{
+  cursor: pointer;
+  background: #dc1727;
+  border: none;
+  transition: 0.3s;
+}
+.card {
+  background: transparent;
+  border: none;
+}
+.card-title{
+  color: blanchedalmond;
+}
+#gameUpdateImg:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+h5#exampleModalLabel {
+  padding-left: 154px;
+  font-family: 'Creepster', sans-serif;
 }
 .signInSec{
   margin-left: 8rem;
@@ -32,13 +79,27 @@ img.logopic {
   font-size: 69px;
   padding-bottom: .5rem;
 }
-.aboutimgwrapper {
+.aboutwrapper{
+  display:flex;
+  flex-wrap: wrap;
+}
+.abouttxtwrapper {
+  width: 70%;
+  text-align: center;
+}
+#aboutwrapperImg {
   height: 220px;
   width: 370px;
 }
 .aboutimg{
   height: 100%;
   width: 100%;
+}
+h5.text-center{
+    font-size: 33px;
+    font-family: 'Creepster', sans-serif;
+    font-weight: 100;
+    color: #037af4;
 }
 
 .charwrapper{
@@ -76,6 +137,10 @@ p.card-text-one {
   /* padding: 65px 1px; */
   /* font-size: 13px; */
 }
+h5#exampleModal1Label {
+  padding-left: 314px;
+  font-family: 'Creepster', sans-serif;
+}
 
 div#carouselExampleCaptions-one {
   width: 33%;
@@ -96,10 +161,19 @@ div#carouselExampleCaptions-one {
     padding: 0;
     font-size: smaller;
   }
+  .fixed-top{
+    height: auto;
+  }
 }
 @media only screen and (max-width:445px) {
   p.card-text-one{
     font-size: 7px
+  }
+  .jumbo_text{
+    font-size: 38px;
+  }
+  .jumbotron h1{
+    font-size: 76px;
   }
 }
 
