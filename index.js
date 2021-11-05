@@ -8,6 +8,10 @@
     console.log(page_type);
     if(page_type=="true"){
       document.getElementById("alertbox").style.display="block"
+      setTimeout(() => {
+        setalertbox({type:null,msg:""})
+          
+        }, 4000);
     }
 
     function bigImg(x) {

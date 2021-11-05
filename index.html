@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="index.css">
 
 </head>
@@ -23,6 +25,7 @@
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
+      
     </div>
 
     <!-- Navbar -->
@@ -38,10 +41,10 @@
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="#">News</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               GAME INFO
@@ -52,7 +55,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
       </div>
@@ -124,26 +127,28 @@
       </div>
     </section>
     <!-- section 3-->
-    <section>
+    <section class="container">
       <div class="aboutwrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col col-8">
-              <div class="abouttxtwrapper">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque suscipit optio praesentium inventore
-                  quae, necessitatibus eveniet voluptatum dolorem, consequuntur rem fuga tempora! Cupiditate totam alias
-                  quas veritatis, voluptas commodi ut.</p>
-              </div>
-            </div>
-            <div class="col col-4">
-              <div class="card" style="width: 18rem;">
-                <img src="Others/about.jpg" class="card-img-top" alt="..." id="aboutwrapperImg">
-              </div>
-            </div>
-          </div>
+        <div class="carouseltext">
+          <h5 class="text-center">WE ARE GAMMER</h5>
+          <p class="abouttext text-center">PlayerUnknown's Battlegrounds (PUBG, also known as PUBG: Battlegrounds) is an online multiplayer
+            battle royale game developed and published by PUBG Corporation, a subsidiary of South Korean video
+            game company Bluehole. The game is based on previous mods that were created by Brendan "PlayerUnknown"
+            Greene for other games, inspired by the 2000 Japanese film Battle Royale, and expanded into a
+            standalone game under Greene's creative direction. In the game, up to one hundred players parachute
+            onto an island and scavenge for weapons and equipment to kill others while avoiding getting killed
+            themselves. The available safe area of the game's map decreases in size over time, directing surviving
+            players into tighter areas to force encounters. The last player or team standing wins the round.</p>
         </div>
-      </div>
-    </section>
+        <div id="carouselExampleCaptions-three" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Others/about.jpg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+
+
+   </section>
     <!-- section 4 -->
     <section class="container">
       <div class="charwrapper">
@@ -206,8 +211,11 @@
       <div class="mapwrapper">
         <div class="carouseltext">
           <h5 class="text-center">M A P S</h5>
-          <p class="chartext text-center">Players have the option to select from 5 maps that are available in PUBG . All
-            of these maps are different from each other and they bring a unique flavor to the table.</p>
+          <p class="chartext text-center">Players have the option to select from 6 maps that are available in PUBG . All
+            of these maps are different from each other and they bring a unique flavor to the table. Ecah map contain
+            different place.The Maps are the playable areas where players are pitted against each other in BATTLEGROUNDS. On these maps, a red zone periodically appears in random locations, causing explosions within the area. Occasionally, a C-130 flies over to deliver an air drop.
+
+            Currently Erangel, Miramar, Sanhok & Vikendi are used for all game modes.</p>
           <div class="forbtn">
             <a type="button" href="OthersPage/map.html" class="btn btn-success">View all Maps</a>
           </div>
@@ -250,13 +258,45 @@
       </div>
     </section>
   </main>
-
-  <footer class="foot">
-    <p class="ftxt" onclick="myFunction()">DOWNLOAD GAME CLIENT</p>
-    <div class="flogopic">
-      <!-- <img src="logo.jpg" alt="logopicture" class="flogo"> -->
-    </div>
-  </footer>
+<footer class="footer-distributed">
+			<div class="footer-left">
+				<img src="Others/logo.jpg" alt="" class="flogo">
+				<p class="footer-links">
+					<a href="index.html" class="link-1">Home</a>					
+					<a href="#">Blog</a>				
+					<a href="index.html">About</a>					
+					<a href="#">Faq</a>					
+					<a href="OthersPage/contact.html">Contact</a>
+				</p>
+				<p class="footer-company-name">Company Name © 2015</p>
+			</div>
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1.555.555.5555</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the game</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+				</div>
+			</div>
+		</footer>
 
 
   <!-- Modal for PlayNow-->
@@ -264,7 +304,7 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"><strong>Get Set up to play</strong></h5>
+          <h5 class="modal-title" id="exampleModalLabel">Get Set up to play</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>

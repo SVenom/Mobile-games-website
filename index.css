@@ -21,7 +21,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
 body {
-  background: url("Others/background (1).jpg");
+  background: url("Others/backgrounds.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 4rem;
@@ -68,12 +68,27 @@ img.logopic {
   cursor: pointer;
   opacity: 0.4;
 }
+.modal-header {
+  background-color: burlywood;
+  height: 42px;
+  padding: 6px;
+}
+.modal-body{
+  background: url("Others/Untitled\ design\ \(7\).png");
+  background-size: cover;
+}
 h5#exampleModalLabel {
   padding-left: 154px;
   font-family: 'Creepster', sans-serif;
+  color: #037af4;
 }
+.signInTxt,.makeOneTxt{
+  color: black;
+  font-weight: bolder;
+}
+
 .signInSec{
-  margin-left: 8rem;
+  margin-left: 9rem;
 }
 .news_text{
   font-size: 69px;
@@ -82,9 +97,10 @@ h5#exampleModalLabel {
 .aboutwrapper{
   display:flex;
   flex-wrap: wrap;
+  margin-top: 55px;
 }
 .abouttxtwrapper {
-  width: 70%;
+  width: 69%;
   text-align: center;
 }
 #aboutwrapperImg {
@@ -107,6 +123,10 @@ h5.text-center{
   flex-wrap: wrap;
   margin-top: 55px;
 }
+#carouselExampleCaptions-three{
+  width: 34%;
+  margin-top: 34px;
+}
 
 div#carouselExampleCaptions {
   width: 34%;
@@ -119,6 +139,7 @@ div#carouselExampleCaptions {
 /* } */
 .forbtn {
   text-align: center;
+  margin-bottom: 4px;
 }
 .mapwrapper{
   display: flex;
@@ -145,8 +166,149 @@ h5#exampleModal1Label {
 div#carouselExampleCaptions-one {
   width: 33%;
 }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+
+
+.footer-distributed{
+	background: #000;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 8px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+/* Footer left */
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+img.flogo {
+  height: 78px;
+}
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+/* Footer links */
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+/* Footer Center */
+.footer-distributed .footer-center{
+	width: 35%;
+}
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+/* Footer Right */
+.footer-distributed .footer-right{
+	width: 20%;
+}
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
 
 @media only screen and (max-width:991px) {
+  #carouselExampleCaptions-three{
+    width: 100%;
+  }
 
   div#carouselExampleCaptions {
     width: 100%;
@@ -164,6 +326,10 @@ div#carouselExampleCaptions-one {
   .fixed-top{
     height: auto;
   }
+  .flogopic {
+    float: left;
+    transform: translate(0%,0%);
+}
 }
 @media only screen and (max-width:445px) {
   p.card-text-one{
@@ -175,26 +341,9 @@ div#carouselExampleCaptions-one {
   .jumbotron h1{
     font-size: 76px;
   }
+ 
 }
 
   
 
 
-.foot {
-    height: 120px;
-    /* width: 100%; */
-    background: black;
-    margin-top: 10px;
-  }
-  p.ftxt {
-    color: bisque;
-    text-align: center;
-    padding-top: 11px;
-  }
-  p.ftxt:hover{
-    cursor: pointer;
-  }
-/* img.flogo {
-    height: 68px;
-    margin-left: 653px;
-  } */

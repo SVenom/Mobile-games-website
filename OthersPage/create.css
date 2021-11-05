@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Irish+Grover&display=swap');
+
+
+
+
+
 
 body{
     background-image: url("../Others/create.jpg");
@@ -7,16 +14,32 @@ body{
 .fromwrapper {
 padding: 28px;    
 height: 469px;
-/* width: 26%; */
-background: #ffffffad;
+background: url("../Others/backgrounds.jpg");
+background-size: cover;
+background-repeat: no-repeat;
 transform: translate(75%, 8%);
 border: none;
 border-radius: 16px;
 text-align: center;
 }
+h1.text.text-center {
+margin-top: 37px;
+font-family: "Ceviche One",sans-serif;
+color:#f6c831;
+}
+
+label.form-check-label {
+    color: aliceblue;
+}
+a{
+    color: cornsilk;
+}
 h2{
 margin:25px;
+font-family:"Irish Grover",sans-serif ;
+color:white;
 }
+
 .socialbtn{
 padding:10px;
 }
