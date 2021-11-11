@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Irish+Grover&display=swap');
+
+
 
  body{
     background-image: url("../Others/create.jpg");
@@ -5,17 +9,32 @@
     background-repeat: no-repeat;
     }
     .fromwrapper {
-        padding: 28px;    
-        /* height: 469px; */
-        /* width: 26%; */
-        background: #ffffff45;
-        transform: translate(78%, 18%);
+        padding: 89px 28px;   
+        height: 469px;
+        background: url("../Others/backgrounds.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: translate(78%, 8%);
         border: none;
         border-radius: 16px;
         text-align: center;
     }
+    h1.text.text-center {
+        margin-top: 10px;
+        font-family: "Ceviche One",sans-serif;
+        color:#f6c831;
+        font-size: 60px;
+    }
+    label{
+        font-family:"Irish Grover",sans-serif ;
+        color:#1a8bff;
+    }
+    a{
+        color: cornsilk;
+    }
     .socialbtn{
         padding:10px;
+        margin-top: 50px;
     }
     @media only screen and (max-width:991px) {
 
@@ -23,7 +42,7 @@
             background-size:auto;
         }
         .fromwrapper{
-
+            height: 490px;
             transform:translate(0%,12%);
             padding: 10px;
 
