@@ -45,7 +45,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link active" href="#">Contact</a>
           </li>
         </ul>
       </div>
@@ -56,27 +56,28 @@
     </nav>
   </header>
   <main>
+    
     <section class="container">
       <div class="row">
         <div class="col">
-          <h1 class="text-center">YOURS MAPS</h1>
-          <select id="swapImg" name="model" class="modelSelect" onchange="swapImage()">
-            <option value="../Maps/erangel.jpg" selected="selected">Erangel</option>
-            <option value="../Maps/minamar.jpg">Minamar</option>
-            <option value="../Maps/sanhok.jpg">Sanhok</option>
-            <option value="../Maps/vikendi.jpg">Vikendi</option>
-            <option value="../Maps/livik.jpg">Livik</option>
-            <option value="../Maps/karakin.jpg">karakin</option>
-
-
-          </select>
-
+          <div class="mapinformation">
+            <select id="swapImg" name="model" class="modelSelect" onchange="swapImage()">
+              <option value="../Maps/erangel.jpg" selected="selected">Erangel</option>
+              <option value="../Maps/minamar.jpg">Minamar</option>
+              <option value="../Maps/sanhok.jpg">Sanhok</option>
+              <option value="../Maps/vikendi.jpg">Vikendi</option>
+              <option value="../Maps/livik.jpg">Livik</option>
+              <option value="../Maps/karakin.jpg">karakin</option>
+            </select>
+            <h1 class="text-center">YOURS MAPS</h1>
+          </div>
           <div id="Mapbox">
+            <img id="imageToSwap" src="../Maps/erangel.jpg"/>
             <h2 id="map" class="map">Erangel</h2>
-            <img id="imageToSwap" src="../Maps/erangel.jpg" width="544" height="281"
-              style="margin-left:275px; margin-top:-82px" />
 
-            <P id="mapbox-bottom">
+          </div>
+
+            <div id="mapbox-bottom">
               <h6 id="heading3" class="heading3">PUBG’s Erangel is the game’s first playable map, which is laid out on
                 an 8km X 8km grid, making it four times larger than the recently released Sanhok map. With such a large
                 playing area, one could strategize their drop to maximise their survival during the initial stages of
@@ -89,13 +90,13 @@
                 There are no exclusive weapons available on Erangel. SCAR-L assault rifle comes close as it only
                 features on Erangel and Miramar</h6>
 
-              <p id="textGrey" class="textGrey"><strong>Erangel Map Loot Places</strong>
+                <p id="textGrey" class="textGrey"><strong>Erangel Map Loot Places</strong>
                 <br>
                 One could find maximum loot at the following three loot areas in the Erangel map. However, one should be
                 extremely careful as these areas are usually swarming with other players during the initial stages of
                 the game. 
                 <br>
-                Sosnovka Military Base – Located in the southern island, the Sosnovka Military Base is one of the best
+                <strong>Sosnovka Military Base</strong> – Located in the southern island, the Sosnovka Military Base is one of the best
                 places in the game where you can find consistent loot that consists high quantities of weapons, armour
                 and attachments.
                 <br><br>
@@ -168,14 +169,6 @@
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
   <script src="maps.js"></script>
-
-  <!-- footer -->
-  <!-- <footer class="foot">
-    <p class="ftxt" onclick="myFunction()">DOWNLOAD GAME CLIENT</p>
-    <div class="flogopic">
-      <img src="../Others/logo.jpg" alt="logopicture" class="flogo">
-    </div>
-  </footer> -->
 
 
   <!-- Modal for PlayNow-->

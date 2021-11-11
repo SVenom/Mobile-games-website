@@ -19,7 +19,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-
+a{
+  font-family:cursive;
+}
+.dropdown-menu.show {
+  border: none;
+}
 body {
   background: url("Others/backgrounds.jpg");
   background-size: cover;
@@ -165,11 +170,6 @@ h5#exampleModal1Label {
 
 div#carouselExampleCaptions-one {
   width: 33%;
-}
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
-* {
-  font-family: Open Sans;
 }
 
 
