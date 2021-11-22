@@ -1,3 +1,32 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "2px 5px";
+    document.getElementById("navbar").style.background = "#000000b8";
+    document.getElementById("home").style.color = "#ffb000";
+    document.getElementById("news").style.color = "#ffb000";
+    document.getElementById("contact").style.color = "#ffb000";
+    document.getElementById("navbarDropdown").style.color = "#ffb000";
+    document.getElementById("maps").style.color = "#ffb000";
+
+
+  } else {
+
+    document.getElementById("navbar").style.padding = "2px 5px";
+    document.getElementById("navbar").style.background = "#77c015";
+    document.getElementById("home").style.color = "rgba(0,0,0,.9)";
+    document.getElementById("news").style.color = "rgba(0,0,0,.9)";
+    document.getElementById("contact").style.color = "rgba(0,0,0,.9)";
+    document.getElementById("navbarDropdown").style.color = "rgba(0,0,0,.9)";
+    document.getElementById("maps").style.color = "#rgba(0,0,0,.9)";
+
+  }
+}
+
+
+
+
 function swapImage() {
     var image = document.getElementById("imageToSwap");
     var dropd = document.getElementById("swapImg");

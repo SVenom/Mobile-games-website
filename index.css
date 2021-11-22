@@ -19,11 +19,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-a{
+*{
   font-family:cursive;
+}
+a{
+  color:#ffb000
 }
 .dropdown-menu.show {
   border: none;
+}
+#navbar{
+  background: #7952b3;
 }
 body {
   background: url("Others/backgrounds.jpg");
@@ -43,23 +49,23 @@ img.logopic {
     text-align: center;
     background-image: url("Others/banner.jpg");
     background-size: cover;
-    /* background-repeat: repeat; */
+    background-repeat: no-repeat;
 }
 .jumbotron h1{  
   color: #77c015;
-  font-size: 86px;
+  font-size: 100px;
   font-family: "Acme",sans-serif;
 }
 .jumbo_text{
   color: deepskyblue;
   font-size: 42px;
   font-weight: 500;
-  font-family: "Fruktur",sans-serif;
+  font-family: "Acme",sans-serif;
+}.btn{
+  border: none;
 }
 .btn:hover{
-  cursor: pointer;
   background: #dc1727;
-  border: none;
   transition: 0.3s;
 }
 .card {

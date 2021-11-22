@@ -1,4 +1,28 @@
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "2px 5px";
+    document.getElementById("navbar").style.background = "#000000b8";
+    document.getElementById("home").style.color = "#ffb000";
+    document.getElementById("news").style.color = "#ffb000";
+    document.getElementById("contact").style.color = "#ffb000";
+    document.getElementById("navbarDropdown").style.color = "#ffb000";
+    document.getElementById("map").style.color = "#ffb000";
+  }
+  
+  else {
+
+    document.getElementById("navbar").style.padding = "5px";
+    document.getElementById("navbar").style.background = "#7952b3";
+    document.getElementById("home").style.color = "rgba(0,0,0,.9)";
+    document.getElementById("news").style.color = "rgba(0,0,0,.9)";
+    document.getElementById("contact").style.color = "rgba(0,0,0,.9)";
+    document.getElementById("navbarDropdown").style.color = "rgba(0,0,0,.9)";
+    document.getElementById("map").style.color = "#rgba(0,0,0,.9)";
+
+  }
+}
     const queryString = window.location.search;
 
     const urlParams = new URLSearchParams(queryString);
@@ -8,10 +32,9 @@
     console.log(page_type);
     if(page_type=="true"){
       document.getElementById("alertbox").style.display="block"
-      setTimeout(() => {
-        setalertbox({type:null,msg:""})
-          
-        }, 4000);
+      setTimeout(()=>{
+        window.location.replace("index.html")
+    },5000);
     }
 
     function bigImg(x) {

@@ -11,10 +11,12 @@ padding: 28px;
 background: url("../Others/backgrounds.jpg");
 background-size: cover;
 background-repeat: no-repeat;
-transform: translate(75%, 8%);
+transform: translate(83%, 8%);
 border: none;
 border-radius: 16px;
 text-align: center;
+width: 38%;
+height: auto;
 }
 h1.text.text-center {
 margin-top: 10px;
@@ -43,29 +45,21 @@ input#box {
 height: 51px;
 border-radius: 10px;
 }
-/* div#next2 {
-transform: translate(0%, 59%);
-} */
-/* .nextbtn {
-transform: translate(0%, 274%);
-} */
-/* @media only screen and (max-width:1394px) {
-
-body{
-    background-size:auto;
+#google{
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
-} */
+
+@media only screen and (max-width:991px) {
+    #google{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
 @media only screen and (max-width:991px) {
 
 body{
     background-size:auto;
 }
-.fromwrapper{
-    height: 490px;
-    transform:translate(0%,12%);
-    padding: 10px;
-
 }
-    
-}
-

@@ -20,7 +20,7 @@
   <header>
     <!-- Alert box -->
     <div class="alert alert-success alert-dismissible fade show" id="alertbox" role="alert"
-      style="margin-top: 90px; margin-bottom:0; z-index:999; display: none;">
+      style="margin-top: 71px; margin-bottom:0; z-index:999; display: none;">
       <strong>Congratulation!</strong> Your Account Created Successfully.
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
@@ -29,7 +29,7 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar navbar-light fixed-top" id="navbar">
       <a class="navbar-brand" href="index.html"><img src="Others/logo.jpg" alt="" class="logopic"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,12 +37,12 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto" id="nav-links">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" id="home" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">News</a>
+            <a class="nav-link" id="news" href="#">News</a>
           </li>
           <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -50,12 +50,11 @@
               GAME INFO
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="OthersPage/map.html">Maps</a>
-              <a class="dropdown-item" href="OthersPage/weapon.html">Weapons</a>
+              <a class="dropdown-item" id="map" href="OthersPage/map.html">Maps</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Contact</a>
+            <a class="nav-link active" id="contact" href="OthersPage/contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -76,7 +75,7 @@
         <p class="jumbo_text">INDIA KA<br> BATTLEGROUNDS</p>
         </hr>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-          PLay Now
+          Play Now
         </button>
 
       </div>

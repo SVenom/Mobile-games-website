@@ -4,9 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=IM+Fell+English+SC&family=Rampart+One&family=Slabo+27px&display=swap');
-a{
+*{
 	font-family:cursive;
-  }
+}
+a{
+  color:blue;
+}
+.dropdown-menu.show {
+  border: none;
+}
+#navbar{
+  background: #77c015;
+}
 body {
 	background: url("../Others/backgrounds.jpg");
 	background-size: cover;
