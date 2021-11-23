@@ -1,3 +1,7 @@
+function myfunction() {
+    alert("Redirect to external website");
+  }
+
 
 function myFunction(e){
     console.log("hello");
@@ -12,6 +16,7 @@ function myFunction(e){
         if(s!="" && p!=""){
             document.getElementById("page").style.display= "none";
             document.getElementById("btns").style.display= "none";
+            document.getElementById("img1").style.display= "none";
             document.getElementById("next").style.display="block";
 
         

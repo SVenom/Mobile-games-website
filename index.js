@@ -1,3 +1,9 @@
+function myFunction() {
+  alert("Redirect to external website");
+}
+
+
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

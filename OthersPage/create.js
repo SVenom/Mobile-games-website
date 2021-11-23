@@ -1,6 +1,8 @@
 
 var n=0;
-function myfunction(){
+function myfunction(e){
+    console.log("hello");
+    e.preventDefault()
     n++
    
     var s,p

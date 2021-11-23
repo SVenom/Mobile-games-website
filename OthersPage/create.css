@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Irish+Grover&display=swap');
+*{
+    font-family: cursive;
+}
 
+.dropdown-menu.show {
+    border: none;
+  }
+  #navbar{
+    background: #77c015;
+  }
+  
+  img.logopic {
+      height: 45px;
+    }
 body{
     background-image: url("../Others/create.jpg");
     background-size: cover;
@@ -19,7 +32,7 @@ width: 38%;
 height: auto;
 }
 h1.text.text-center {
-margin-top: 10px;
+margin-top: 75px;
 font-family: "Ceviche One",sans-serif;
 color:#f6c831;
 font-size: 60px;
