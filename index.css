@@ -134,9 +134,6 @@ div#carouselExampleCaptions {
 .carouseltext {
   width: 65%;
 }
-/* h5#exampleModal1Label {
-  margin-left: 475px; */
-/* } */
 .forbtn {
   text-align: center;
   margin-bottom: 4px;
@@ -146,7 +143,6 @@ div#carouselExampleCaptions {
   flex-wrap: wrap;
   margin-top: 55px;
 }
-/* js style */
 img.bg-img {
   height: 100%;
   width: 100%;
@@ -155,8 +151,6 @@ p.card-text-one {
   color: transparent;
   position: absolute;
   height: 100%;
-  /* padding: 65px 1px; */
-  /* font-size: 13px; */
 }
 h5#exampleModal1Label {
   padding-left: 314px;

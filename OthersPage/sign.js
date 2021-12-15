@@ -1,6 +1,5 @@
 function myFunction(){
     console.log("hello");
-    // e.preventDefault()
    
     var s="";
     var p="";
